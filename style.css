@@ -1,0 +1,1446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-seccion: rgb(189, 38, 38);
+    --color-texto: #232323;
+    --color-texto-casi-rojo: rgb(223, 85, 85);
+    --color-texto-amarillo: rgb(255, 255, 5);
+    --color-divs-imgs: rgba(204, 204, 204, 0.562);
+}
+
+.contenedor-mobile {
+    margin-left: 0px;
+    width: 100%;
+    height: 108vh;
+    position: relative;
+    background-color: #fff;
+}
+
+body {
+    height: 845px;
+    width: max-content;
+}
+
+.logo-header {
+    width: 50px;
+    position: relative;
+    right: 240px;
+}
+
+.hr-header {
+    width: 300px;
+}
+
+.div-header {
+    visibility: hidden;
+    width: 50%;
+    height: 150vh;
+    background-color: white;
+    margin-left: 0;
+    position: absolute;
+    top: -15px;
+}
+
+.abrir-modal-header {
+    border: none;
+    background-color: transparent;
+    font-size: 40px;
+    position: relative;
+    left: -150px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.bg-div {
+    width: 110%;
+    height: 150vh;
+    background-color: rgba(0, 0, 0, 0.705);
+    margin-left: 180px;
+    margin-top: -400px;
+}
+
+.exclusivos {
+    color: black;
+}
+
+.exclusivos:hover {
+    border-left: 5px solid blue;
+}
+
+.nuevos {
+    color: black;
+}
+
+.nuevos:hover {
+    border-left: 5px solid blue;
+}
+
+.vender {
+    color: black;
+}
+
+.vender:hover {
+    border-left: 5px solid blue;
+}
+
+.modo-oscuro {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: max-content;
+    height: max-content;
+    padding: 3px 5px 3px 5px;
+    padding-left: 0;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.modo-oscuro:hover {
+    border-left: 5px solid blue;
+}
+
+.modo-claro {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: max-content;
+    height: max-content;
+    padding: 3px 5px 3px 5px;
+    padding-left: 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.modo-claro:hover {
+    border-left: 5px solid blue;
+}
+
+.boton-cerrar-modal-header {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 30px;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 20px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: 40px;
+    font-size: 20px;
+}
+
+.hr-modal {
+    width: 80%;
+    position: relative;
+    top: 0px;
+}
+
+.divBotones {
+    height: max-content;
+    width: max-content;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: 0px;
+}
+
+.botonRegistro {
+    width: 120px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid blue;
+}
+
+.imgRegistro {
+    width: 30px;
+    height: 30px;
+    float: left;
+    position: relative;
+    top: 2px;
+}
+
+.textoBotonCrear {
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    left: 15px;
+    top: -20px;
+}
+
+.botonInicio {
+    width: 120px;
+    height: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: -15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid blue;
+}
+
+.imgInicio {
+    width: 30px;
+    height: 30px;
+    float: left;
+    position: relative;
+    top: 2px;
+}
+
+.textoBotonInicio {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    left: 15px;
+    top: -23px;
+}
+
+header {
+    display: flex;
+    width: 400px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    /* color: var(--color-texto-casi-rojo); */
+}
+
+.div-img {
+    width: 105px;
+    height: 840px;
+    background-color: var(--color-seccion);
+    float: right;
+    margin-top: -426px;
+    animation: derecha 3s forwards;
+    animation-delay: 2.9s;
+}
+
+@keyframes derecha {
+    0% {
+        position: relative;
+        left: 300px;
+    }
+    100% {
+        position: relative;
+        left: 0;
+    }
+}
+
+.iron-derecha {
+    width: 150px;
+    position: relative;
+    right: 70px;
+    top: 420px;
+}
+
+.imagenes-abajo {
+    width: 240px;
+    height: 200px;
+    background-color: var(--color-seccion);
+    margin-top: 215px;
+    border-top-right-radius: 20px;
+    animation: abajo 3s forwards;
+    animation-delay: 2.9s;
+}
+
+.contenedor-3-imagenes {
+    width: 250px;
+    height: 180px;
+    position: relative;
+    top: 10px;
+    left: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@keyframes abajo {
+    0% {
+        position: relative;
+        top: 400px;
+    }
+    100% {
+        position: relative;
+        top: 00px;
+    }
+}
+
+#img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: var(--color-divs-imgs);
+    pointer-events: none;
+}
+
+#img-2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: var(--color-divs-imgs);
+}
+
+#img-3 {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: var(--color-divs-imgs);
+}
+
+.spider-man {
+    width: 60px;
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
+
+.capitan-america {
+    width: 70px;
+    position: relative;
+    top: 4px;
+    left: 0px;
+}
+
+.ant-man {
+    width: 70px;
+    position: relative;
+    top: 4px;
+    left: 0px;
+}
+
+.contenedor-texto {
+    width: 200px;
+    height: 300px;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    color: var(--color-texto-casi-rojo);
+    text-align: center;
+}
+
+h1 {
+    color: var(--color-seccion);
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2 {
+    color: var(--color-texto-amarillo);
+    position: relative;
+    top: 770px;
+    left: 40px;
+    transform: rotate(-90deg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* animacion-de-carga */
+
+.pantalla-de-carga {
+    width: 387.5px;
+    height: 120vh;
+    background-color: var(--color-seccion);
+    position: relative;
+    top: -880px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pantalla-de-carga>span {
+    width: 50px;
+    height: 300px;
+    background: var(--color-seccion);
+    animation: carga 1.6s linear infinite;
+}
+
+.fin {
+    animation: chao 3s forwards;
+}
+
+@keyframes chao {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes carga {
+    0% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transform: translateX(-50px) scale(1);
+    }
+    50% {
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        opacity: 1;
+        transform: translateX(0px) scale(1.2);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transform: translateX(50px) scale(1);
+    }
+}
+
+.pantalla-de-carga>span:nth-child(1) {
+    animation-delay: 0s;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.9);
+    color: rgba(233, 38, 38, 0.9);
+}
+
+.pantalla-de-carga>span:nth-child(2) {
+    animation-delay: 0.2s;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.9);
+    color: rgba(233, 38, 38, 0.9);
+}
+
+.pantalla-de-carga>span:nth-child(3) {
+    animation-delay: 0.4s;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.9);
+    color: rgba(233, 38, 38, 0.9);
+}
+
+.pantalla-de-carga>span:nth-child(4) {
+    animation-delay: 0.6s;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.9);
+    color: rgba(233, 38, 38, 0.9);
+}
+
+.pantalla-de-carga>span:nth-child(5) {
+    animation-delay: 0.8s;
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-shadow: 1px 2px rgba(0, 0, 0, 0.9);
+    color: rgba(233, 38, 38, 0.9);
+}
+
+
+/* modal */
+
+.contenedor-modal {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #47a386;
+    box-shadow: 2px 2px 6px rgb(1, 63, 1);
+    position: relative;
+    left: 0px;
+    top: -1050px;
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.spider-modal {
+    width: 60px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+
+.p-modal {
+    position: relative;
+    top: -25px;
+    left: 5px;
+    text-align: center;
+    background-color: #66c5a7be;
+    width: 90%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contenedor-modal-2 {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #47a386;
+    box-shadow: 2px 2px 6px rgb(1, 63, 1);
+    position: relative;
+    top: -1150px;
+    left: 100px;
+    visibility: hidden;
+}
+
+.capitan-america-modal {
+    width: 70px;
+    position: relative;
+    left: 5px;
+    top: 2px;
+}
+
+.closedos {
+    background-color: transparent;
+    position: relative;
+    left: 9px;
+    top: 2px;
+    border: none;
+    cursor: pointer;
+    color: wheat;
+    font-size: 20px;
+    float: left;
+}
+
+.p-modal-2 {
+    position: relative;
+    top: -30px;
+    left: 5px;
+    text-align: center;
+    background-color: #66c5a7be;
+    width: 90%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.show-3 {
+    visibility: visible;
+}
+
+.abrir {
+    position: relative;
+    top: -1100px;
+    border: none;
+    background-color: var(--color-divs-imgs);
+    color: var(--color-texto-amarillo);
+    cursor: pointer;
+    position: relative;
+    left: 15px;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+}
+
+.abrir-modal-dos {
+    position: relative;
+    top: -1100px;
+    border: none;
+    background-color: var(--color-divs-imgs);
+    color: var(--color-texto-amarillo);
+    cursor: pointer;
+    position: relative;
+    left: 25px;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+}
+
+.abrir-modal-tres {
+    position: relative;
+    top: -1100px;
+    border: none;
+    background-color: var(--color-divs-imgs);
+    color: var(--color-texto-amarillo);
+    cursor: pointer;
+    position: relative;
+    left: 30px;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+}
+
+.contenedor-modal-tres {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #47a386;
+    box-shadow: 2px 2px 6px rgb(1, 63, 1);
+    position: relative;
+    top: -1250px;
+    left: 200px;
+    visibility: hidden;
+}
+
+.closetres {
+    background-color: transparent;
+    position: relative;
+    left: 9px;
+    top: 2px;
+    border: none;
+    cursor: pointer;
+    color: wheat;
+    font-size: 20px;
+    float: left;
+}
+
+.nt-mn {
+    width: 70px;
+    position: relative;
+    left: 10px;
+    top: 0px;
+}
+
+.p-modal-3 {
+    position: relative;
+    top: -35px;
+    left: 5px;
+    text-align: center;
+    background-color: #66c5a7be;
+    width: 90%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.show-4 {
+    visibility: visible;
+}
+
+#close {
+    background-color: transparent;
+    position: relative;
+    left: 9px;
+    top: 2px;
+    border: none;
+    cursor: pointer;
+    color: wheat;
+    font-size: 20px;
+    float: left;
+}
+
+.moverBotones {
+    display: flex;
+    position: relative;
+    top: -00px;
+    /* animation: mover 8s forwards; */
+}
+
+@keyframes mover {
+    0% {
+        position: relative;
+        top: 200px;
+    }
+    50% {
+        position: relative;
+        top: -100px;
+    }
+    100% {
+        position: relative;
+        top: -180;
+    }
+}
+
+
+/* Parte del segundo contenedor de celular */
+
+.contenedor-mobile-2 {
+    width: 390px;
+    height: 844px;
+    background-color: rgb(247, 216, 221);
+}
+
+.header-contenedor-dos {
+    display: flex;
+    align-items: center;
+    width: 389.3px;
+    height: 100px;
+    background: linear-gradient(to right, red, rgb(90, 10, 10));
+    /* animation: bg 3s infinite ease-in-out; */
+    transition: 1.5s;
+}
+
+
+/* @keyframes bg {
+    0% {
+        background-position: 50% 0;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+} */
+
+.redireccion {
+    background-color: var(--color-texto-casi-rojo);
+    border: none;
+    padding: 3px 5px 3px 5px;
+    border-radius: 9px;
+    color: var(--color-texto-amarillo);
+    cursor: pointer;
+    position: relative;
+    top: -35px;
+    left: 10px;
+}
+
+.vender-header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: var(--color-texto-amarillo);
+    position: relative;
+    left: 15%;
+    top: -12%;
+    text-shadow: 1px 1px 1px rgb(107, 8, 8);
+}
+
+.texto-info-contenedor-dos {
+    width: 370px;
+    height: 100px;
+    background-color: var(--color-texto-casi-rojo);
+    margin-left: 7px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.texto-div-tomato {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: relative;
+    top: 22px;
+}
+
+.div-vender {
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    border: 2px solid rgb(247, 165, 179);
+    position: relative;
+    left: 20%;
+    top: 5%;
+    background-color: var(--color-texto-casi-rojo);
+}
+
+.div-comprar {
+    width: 220px;
+    height: 220px;
+    border: 2px solid rgb(247, 165, 179);
+    border-radius: 10px;
+    background-color: var(--color-texto-casi-rojo);
+    position: relative;
+    top: 13%;
+    left: 20%;
+}
+
+.spider-venta {
+    width: 150px;
+    position: relative;
+    top: 10px;
+    left: 35px;
+}
+
+.boton-venta {
+    background-color: rgb(247, 165, 179);
+    border: none;
+    padding: 3px 5px 3px 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+    left: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(138, 64, 88);
+    cursor: pointer;
+}
+
+.capitan-comprar {
+    width: 150px;
+    position: relative;
+    left: 30px;
+    top: 15px;
+}
+
+.boton-comprar {
+    background-color: rgb(247, 165, 179);
+    border: none;
+    padding: 3px 5px 3px 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+    left: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(138, 64, 88);
+    cursor: pointer;
+}
+
+
+/* parte del login */
+
+.contenedorLogin {
+    width: 390px;
+    height: 100vh;
+    background: #23242a;
+    position: relative;
+    top: -20px;
+}
+
+.fondo {
+    width: 90%;
+    height: 90vh;
+    background: linear-gradient(to left, cyan, red, yellow, wheat, blue, darkblue);
+    background-size: 400% 400%;
+    animation: fondo 6s infinite ease-in-out;
+    margin-left: 5%;
+    position: relative;
+    top: 5vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+@keyframes fondo {
+    0% {
+        background-position: 50% 0;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.negro {
+    width: 90%;
+    height: 85vh;
+    background: #000000;
+    position: relative;
+    left: 5%;
+    top: 2.5%;
+}
+
+.negro>h1 {
+    color: rgb(207, 207, 207);
+    position: relative;
+    top: 100px;
+    font-size: 30px;
+}
+
+input::placeholder {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    height: 20px;
+}
+
+input {
+    position: relative;
+    top: 150px;
+    left: 70px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid wheat;
+    height: 20px;
+    padding-top: 3px;
+    color: wheat;
+}
+
+.pp {
+    position: relative;
+    top: 180px;
+    left: 80px;
+    height: max-content;
+}
+
+.ppp {
+    position: relative;
+    top: 205px;
+    left: 80px;
+}
+
+.imgInput {
+    width: 30px;
+    position: relative;
+    top: 187px;
+    right: 46%;
+}
+
+.imgInputDos {
+    width: 27px;
+    position: relative;
+    top: 210px;
+    right: 45%;
+}
+
+.botonLogin {
+    width: 105px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 230px;
+    left: 150px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid wheat;
+    color: #fff;
+}
+
+.botonLogin>p {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -15px;
+}
+
+.imgBotonLogin {
+    width: 30px;
+    position: relative;
+    left: 10px;
+}
+
+.botonLogin2 {
+    width: 105px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    position: relative;
+    top: 230px;
+    left: 150px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid wheat;
+    color: #fff;
+    visibility: hidden;
+}
+
+.botonLogin2>p {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -15px;
+}
+
+
+/* Desktop */
+
+@media (min-width: 1000px) {
+    .contenedor-mobile {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
+    .moverBotones {
+        position: relative;
+        top: -40px;
+    }
+    .fin {
+        width: 1343px;
+    }
+    .pantalla-de-carga {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .hr-header {
+        width: 1300px;
+    }
+    .div-img {
+        margin-top: -452px;
+        height: 650px;
+        width: 200px;
+        float: right;
+        position: relative;
+        left: 100px;
+        background-color: var(--color-seccion);
+    }
+    .div-header {
+        margin-left: 40px;
+        display: flex;
+        background-color: transparent;
+    }
+    .imagenes-abajo {
+        position: relative;
+        top: -800px;
+        width: 830px;
+    }
+    @keyframes abajo {
+        0% {
+            position: relative;
+            top: 400px;
+        }
+        100% {
+            position: relative;
+            top: -228px;
+        }
+    }
+    li {
+        display: flex;
+        flex-direction: row;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 0px;
+    }
+    .contenedor-3-imagenes {
+        width: 800px;
+        justify-content: space-evenly;
+        position: relative;
+    }
+    #img {
+        width: 200px;
+        height: 170px;
+        border-radius: 30px;
+        background-color: var(--color-divs-imgs)
+    }
+    #img-2 {
+        width: 200px;
+        height: 170px;
+        border-radius: 30px;
+        background-color: var(--color-divs-imgs)
+    }
+    #img-3 {
+        width: 200px;
+        height: 170px;
+        border-radius: 30px;
+        background-color: var(--color-divs-imgs)
+    }
+    .spider-man {
+        width: 150px;
+        position: relative;
+        top: 15px;
+        left: 20px;
+    }
+    .capitan-america {
+        width: 150px;
+        position: relative;
+        top: 10px;
+        left: 20px;
+    }
+    .ant-man {
+        width: 150px;
+        position: relative;
+        top: 10px;
+        left: 20px;
+    }
+    .iron-derecha {
+        width: 300px;
+        position: relative;
+        top: 190px;
+        right: 120px;
+    }
+    header {
+        height: 80px;
+    }
+    a {
+        font-size: 25px;
+        position: relative;
+        left: 350px;
+    }
+    .contenedor-texto {
+        position: relative;
+        left: 300px;
+        top: -60px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 30px;
+        position: relative;
+        left: 80px;
+        top: 520px;
+    }
+    .logo-header {
+        position: relative;
+        left: -30px;
+    }
+    .pantalla-de-carga {
+        position: relative;
+        top: -950px;
+        width: 100%;
+    }
+    .contenedor-modal {
+        position: relative;
+        left: 100px;
+        top: -1350px;
+        width: 170px;
+        height: 170px;
+    }
+    .contenedor-modal-2 {
+        position: relative;
+        left: 350px;
+        top: -1520px;
+        width: 170px;
+        height: 170px;
+    }
+    .contenedor-modal-tres {
+        position: relative;
+        left: 600px;
+        top: -1690px;
+        width: 170px;
+        height: 170px;
+    }
+    .p-modal {
+        position: relative;
+        top: -20px;
+    }
+    .spider-modal {
+        width: 120px;
+    }
+    .capitan-america-modal {
+        width: 120px;
+        position: relative;
+        left: 5px;
+    }
+    .p-modal-2 {
+        position: relative;
+        top: -20px;
+        left: 5px;
+    }
+    .nt-mn {
+        width: 120px;
+    }
+    .p-modal-3 {
+        position: relative;
+        top: -30px;
+    }
+    .abrir {
+        position: relative;
+        top: -1530px;
+        border: none;
+        background-color: var(--color-divs-imgs);
+        color: var(--color-texto-amarillo);
+        cursor: pointer;
+        position: relative;
+        left: 240px;
+        border-radius: 20px;
+        padding: 5px 5px 5px 5px;
+        animation: no 6s forwards;
+    }
+    .abrir-modal-dos {
+        position: relative;
+        top: -1530px;
+        border: none;
+        background-color: var(--color-divs-imgs);
+        color: var(--color-texto-amarillo);
+        cursor: pointer;
+        position: relative;
+        left: 450px;
+        border-radius: 20px;
+        padding: 5px 5px 5px 5px;
+        animation: no 6s forwards;
+    }
+    .abrir-modal-tres {
+        position: relative;
+        top: -1530px;
+        border: none;
+        background-color: var(--color-divs-imgs);
+        color: var(--color-texto-amarillo);
+        cursor: pointer;
+        position: relative;
+        left: 580px;
+        border-radius: 20px;
+        padding: 5px 5px 5px 5px;
+        animation: no 6s forwards;
+    }
+    /* animacion para los botones */
+    @keyframes no {
+        0% {
+            position: relative;
+            top: 500px;
+        }
+        100% {
+            position: relative;
+            top: -1530px;
+        }
+    }
+    .contenedor-mobile-2 {
+        width: 1343px;
+        height: 100%;
+        border: 2px solid black;
+        background-color: rgb(247, 216, 221);
+    }
+    .header-contenedor-dos {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background-color: var(--color-seccion);
+    }
+    .redireccion {
+        background-color: var(--color-texto-casi-rojo);
+        border: none;
+        padding: 13px 15px 13px 15px;
+        border-radius: 9px;
+        color: var(--color-texto-amarillo);
+        cursor: pointer;
+        position: relative;
+        top: -5px;
+        left: 10px;
+        font-size: 18px;
+    }
+    .vender-header {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        color: var(--color-texto-amarillo);
+        position: relative;
+        left: 35%;
+        top: -12%;
+        text-shadow: 1px 1px 1px rgb(107, 8, 8);
+    }
+    /* aca se pone el texto grande */
+    .texto-info-contenedor-dos {
+        width: 1300px;
+        height: 100px;
+        background-color: var(--color-texto-casi-rojo);
+        margin-left: 20px;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+    .texto-div-tomato {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        position: relative;
+        top: 22px;
+    }
+    /* Recordar el javascript */
+    .div-vender {
+        width: 220px;
+        height: 220px;
+        border-radius: 10px;
+        border: 2px solid rgb(247, 165, 179);
+        position: relative;
+        left: 20%;
+        top: 10%;
+        background-color: var(--color-texto-casi-rojo);
+    }
+    .div-comprar {
+        width: 220px;
+        height: 220px;
+        border: 2px solid rgb(247, 165, 179);
+        border-radius: 10px;
+        background-color: var(--color-texto-casi-rojo);
+        position: relative;
+        top: -16.5%;
+        left: 60%;
+    }
+    .spider-venta {
+        width: 150px;
+        position: relative;
+        top: 10px;
+        left: 35px;
+    }
+    .boton-venta {
+        background-color: rgb(247, 165, 179);
+        border: none;
+        padding: 3px 5px 3px 5px;
+        border-radius: 10px;
+        font-size: 18px;
+        position: relative;
+        top: 20px;
+        left: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(138, 64, 88);
+        cursor: pointer;
+    }
+    .capitan-comprar {
+        width: 150px;
+        position: relative;
+        left: 30px;
+        top: 15px;
+    }
+    .boton-comprar {
+        background-color: rgb(247, 165, 179);
+        border: none;
+        padding: 3px 5px 3px 5px;
+        border-radius: 10px;
+        font-size: 18px;
+        position: relative;
+        top: 20px;
+        left: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(138, 64, 88);
+        cursor: pointer;
+    }
+    /* parte para los botones del modal */
+    .boton-cerrar-modal-header {
+        visibility: hidden;
+    }
+    .abrir-modal-header {
+        visibility: hidden;
+    }
+    .exclusivos {
+        visibility: visible;
+        height: max-content;
+        color: var(--color-seccion);
+        animation: si 6s forwards;
+        display: flex;
+    }
+    .nuevos {
+        display: flex;
+        visibility: visible;
+        height: max-content;
+        color: var(--color-seccion);
+        animation: si 6s forwards;
+    }
+    .vender {
+        display: flex;
+        visibility: visible;
+        height: max-content;
+        color: var(--color-seccion);
+        animation: si 6s forwards;
+    }
+    @keyframes si {
+        0% {
+            position: relative;
+            top: -400px;
+        }
+        100% {
+            position: relative;
+            top: -180;
+        }
+    }
+    .contenedorLogin {
+        width: 1400px;
+        height: 101vh;
+    }
+    .fondo {
+        width: 80%;
+        height: 90%;
+        position: relative;
+        top: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+    .negro {
+        width: 95%;
+        margin-left: -2.5%;
+    }
+    form {
+        width: max-content;
+        height: max-content;
+        position: relative;
+        left: 30%;
+        top: 42%;
+        display: flex;
+        align-items: center;
+    }
+    .pp {
+        position: relative;
+        top: 0;
+        left: 80px;
+    }
+    .ppp {
+        position: relative;
+        top: 0;
+        left: 130px;
+    }
+    .imgInput {
+        position: relative;
+        top: 0px;
+        right: 140px;
+    }
+    .imgInputDos {
+        position: relative;
+        top: 0;
+        right: 90px;
+    }
+    .botonLogin {
+        position: relative;
+        top: 70px;
+        left: 0px;
+    }
+    .divBotones {
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        animation: login 9s forwards;
+    }
+    .botonInicio {
+        margin-left: -1100px;
+        margin-top: 20px;
+    }
+    .botonRegistro {
+        margin-top: -15px;
+    }
+    @keyframes login {
+        0% {
+            visibility: hidden;
+        }
+        50% {
+            visibility: hidden;
+        }
+        100% {
+            visibility: visible;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Super Heroes </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png">
+</head>
+
+<body>
+    <main class="contenedor-mobile">
+        <header>
+            <button class="abrir-modal-header"> + </button>
+            <img src="logo.png" alt="Logo" class="logo-header">
+            <!-- <div class="div-header">
+                <a class="exclusivos" href="https://api.whatsapp.com/send?phone=+573205534914&text=Hola!%20%C2%20me%20interesa%20saber%20si%20hay%20%20algo%20exclusivo%20" target="_blank"> Exclusivos </a>
+                <a class="nuevos" href="https://api.whatsapp.com/send?phone=+573205534914&text=Hola!%20%C2%BFhay%20algo%20nuevo?%20Maicol%20Serrano,%20Mi%20nombre%20es:%20" target="_blank"> Nuevos </a>
+                <a class="vender" href="vender.html"> Vender </a>
+            </div> -->
+        </header>
+        <hr class="hr-header">
+        <div class="contenedor-texto">
+            <h3> Diseña el traje de tu </h3>
+            <h1> Super Héroe! </h1>
+            <p> Esta es la pagina web la cual te ayudara con tus <br> super heroes favoritos, pues aca podras interactuar <br> con la compra y venta de estos <br> <br> Disfruta del contenido y navega mas a fondo </p>
+        </div>
+        <div class="div-img">
+            <h2> Iron Man </h2>
+            <img class="iron-derecha" src="iron-derecha.png" alt="iron-derecha">
+        </div>
+        <div class="imagenes-abajo">
+            <div class="contenedor-3-imagenes">
+                <div id="img">
+                    <img class="spider-man" src="spider.webp" alt="spider-man">
+                </div>
+                <div id="img-2">
+                    <img class="capitan-america" src="Captain-America-PNG-HD-Quality.png" alt="capitan-america">
+                </div>
+                <div id="img-3">
+                    <img class="ant-man" src="ant-man.webp" alt="ant-man">
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="fin">
+        <div class="pantalla-de-carga">
+            <span>S <br> <br> <br> <br> H</span>
+            <span>u <br><br><br><br> e</span>
+            <span>p <br><br><br><br> r</span>
+            <span>e <br><br><br><br> o</span>
+            <span>r <br><br><br><br> e</span>
+        </div>
+    </div>
+    <div class="contenedor-modal" id="contenedor_modal">
+        <button class="close" id="close"> X </button>
+        <img src="spider.webp" alt="Spider-man-modal" class="spider-modal">
+        <p class="p-modal"> Me interesa </p>
+    </div>
+    <div class="contenedor-modal-2" id="contenedor_modal_2">
+        <button class="closedos" id="closedos"> X </button>
+        <img src="Captain-America-PNG-HD-Quality.png" alt="Capitan-america" class="capitan-america-modal">
+        <p class="p-modal-2"> Me interesa </p>
+    </div>
+    <div class="contenedor-modal-tres">
+        <img class="nt-mn" src="ant-man.webp" alt="">
+        <button class="closetres" id="closetres"> X </button>
+        <p class="p-modal-3"> Me interesa </p>
+    </div>
+    <div class="moverBotones">
+        <button class="abrir" id="abrir"> Comprar </button>
+        <button class="abrir-modal-dos" id="abrir-modal-dos"> Comprar </button>
+        <button class="abrir-modal-tres" id="abrir-modal-tres"> Comprar </button>
+    </div>
+    <script src="./index.js"></script>
+    <div class="div-header">
+        <button class="boton-cerrar-modal-header"> X </button>
+        <ul>
+            <li>
+                <a class="exclusivos" href="https://api.whatsapp.com/send?phone=+573205534914&text=Hola!%20%C2%20me%20interesa%20saber%20si%20hay%20%20algo%20exclusivo%20" target="_blank"> Exclusivos </a>
+                <a class="nuevos" href="https://api.whatsapp.com/send?phone=+573205534914&text=Hola!%20%C2%BFhay%20algo%20nuevo?%20Maicol%20Serrano,%20Mi%20nombre%20es:%20" target="_blank"> Nuevos </a>
+                <a class="vender" href="vender.html"> Vender </a>
+                <button class="modo-oscuro">Modo noche</button>
+                <button class="modo-claro">Modo claro</button>
+                <hr class="hr-modal">
+                <div class="divBotones">
+                    <a href="login.html" target="_blank"><button class="botonRegistro">
+                        <img class="imgRegistro" src="agregar-usuario.png" alt="img-registro">
+                        <p class="textoBotonCrear"> Registrate</p>
+                    </button></a>
+                    <a href="login.html" target="_blank"><button class="botonInicio">
+                        <img class="imgInicio" src="perfil-del-usuario.png" alt="img-inicio">
+                        <p class="textoBotonInicio"> Iniciar</p>
+                    </button></a>
+                </div>
+            </li>
+        </ul>
+        <div class="bg-div"></div>
+    </div>
+    <script src="header.js"></script>
+</body>
+
+</html>
